@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Votación en Blockchain</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="votingContractData.js"></script>
+	<script src="https://cdn.rawgit.com/ethereum/web3.js/1.0/dist/web3.min.js" async onload="init()"></script>
+</head>
+<body class="container">
+<h1>Ejemplo votación</h1>
+<div class="table-responsive">
+	<table class="table table-bordered">
+		<thead>
+		<tr>
+			<th>Candidatos</th>
+			<th>Cantidad de votos</th>
+			<th>Elegir candidato</th>
+		</tr>
+		</thead>
+		<tbody id="table"><tr><td colspan="3">Loading...</td></tr></tbody>
+	</table>
+</div>
+<label>Clave para votar: <input type="text" id="from" placeholder="Ingrese su DNI"/></label>
+<div id="log"></div>
+</body>
+</html>
